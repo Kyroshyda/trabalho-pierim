@@ -131,6 +131,14 @@
     </footer>
 
     <script>
+         
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navList = document.querySelector('.nav-list');
+
+    menuToggle.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    });
+
         // JS simples para o menu responsivo
         document.querySelector('.menu-toggle').addEventListener('click', function() {
             document.querySelector('.nav-list').classList.toggle('active');
@@ -139,4 +147,5 @@
 </body>
 
 </html>
+
 
